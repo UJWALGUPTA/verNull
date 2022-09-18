@@ -5,7 +5,9 @@ import arrow from '../../Assets/arrow.png'
 import ToggleSwitch from '../../components/toggleBtn/Toggle'
 import Camera from '../../components/Camera/Camera'
 import ScreenTime from '../../components/ScreenTime'
-import Chart from '../../components/Chart/Chart'
+// import Chart from '../../components/Chart/Chart'
+import graph from '../../Assets/graph.png'
+
 function Dashboard() {
   let time = localStorage.getItem('avgScreenTime');
   let posture = JSON.parse(localStorage.getItem('dailyPosture') != undefined ? localStorage.getItem('dailyPosture') : JSON.stringify([]))
@@ -24,8 +26,8 @@ function Dashboard() {
       </div>
       {/* f2 */}
       <div className={style.f2}>
-        <div className={style.left}>
-          <Chart />
+        <div className={style.left} style={{ display:'flex', justifyContent:'center', alignItems:'center'}}>
+          <img src={graph} style={{width:'80%'}} />
         </div>
         <div className={style.right}>
           <div className={style.top}>

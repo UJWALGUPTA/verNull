@@ -19,9 +19,9 @@ function Header() {
     return (
         <div className={style.wrapper}>
             <div className={style.top}>
-                <div className={style.left}>Welcome John Sir!</div>
+                <div className={style.left}>Hi Robin</div>
                 <div className={style.right}>
-                    <div onClick={() => { setCoinPopup(!coinPopup) }}> 2000 <img src={coins} />
+                    <div onClick={() => { setCoinPopup(!coinPopup) }} > 2000 <img src={coins} />
                         {coinPopup ?
 
                             <div className={style.coinWrapper}>
@@ -29,7 +29,7 @@ function Header() {
                                     <div className={style.cl1}>
                                         <img src={wallet} /> Your Wallet
                                     </div>
-                                    <div className={style.cl2}>2000 VN</div>
+                                    <div className={style.cl2} >2000 VN</div>
                                 </div>
                                 <div className={style.c2}>
                                     <div className={style.cl1}>VerNull Streak: </div>
